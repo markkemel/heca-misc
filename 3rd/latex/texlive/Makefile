@@ -1,6 +1,6 @@
 include ../../Makefile.conf
 
-TLV_VER := 2012
+TLV_VER := 2013
 TLV_DIR := texlive$(TLV_VER)
 TLV_ISO := $(TLV_DIR).iso
 
@@ -10,7 +10,7 @@ all: download extract install
 
 download: 
 	[ -f $(TLV_VER) ] || \
-		wget http://ftp.gwdg.de/pub/ctan/systems/texlive/Images/$(TLV_ISO)
+            wget ftp://ftp.cstug.cz/pub/tex/CTAN/systems/texlive/Images/$(TLV_ISO)
 
 .PHONY: download
 
